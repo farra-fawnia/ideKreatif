@@ -1,8 +1,8 @@
 <?php
 // Memasukkan file konfigurasi database
-include 'config.php';
+include("../config.php");
 // Memasukkan file init session
-include "init_session.php";
+include("../.includes/init_session.php");
 ?>
 
 <!DOCTYPE html>
