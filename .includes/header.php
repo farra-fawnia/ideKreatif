@@ -1,8 +1,8 @@
 <?php
 // Memasukkan file konfigurasi database
-include("../config.php");
+include 'config.php';
 // Memasukkan file init session
-include("../.includes/init_session.php");
+include 'init_session.php';
 ?>
 
 <!DOCTYPE html>
@@ -31,6 +31,10 @@ include("../.includes/init_session.php");
     <!-- Page CSS -->
     <!-- Summernote CSS and JS -->
     <link rel="stylesheet" href="assets/vendor/css/summernote.min.css">
+
+    <!-- gtw -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.1/css/dataTables.bootstrap5.min.css">
+
     <!-- Helpers -->
     <script src="assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
