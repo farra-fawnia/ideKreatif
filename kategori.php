@@ -44,7 +44,7 @@ include '.includes/toast_notification.php';
                                     <i class="bx bx-dots-vertical-rounded"></i>
                                 </button>
                                 <div class="dropdown-menu">
-                                    <a href='#' class="dropdown-item" data-bs-toggle="modal" data-bs-target="#editCategory_<?= $category['$category_id']; ?>"><i class="bx bx-edit-alt me-2"></i> Edit </a>
+                                    <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#editCategory_<?= $category['category_id']; ?>"><i class="bx bx-edit-alt me-2"></i> Edit </a>
                                     <a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#deleteCategory_<?= $category['category_id']; ?>"><i class="bx bx-trash me-2"></i> Delete </a>
                                 </div>
                             </div>
@@ -75,7 +75,6 @@ include '.includes/toast_notification.php';
                         </div>
                     </div>
                     <!--Modal untuk Update Data Kategori-->
-
                     <div id="editCategory_<?= $category['category_id']; ?>" class="modal fade" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="model-content">
