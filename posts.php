@@ -16,7 +16,7 @@ include '.includes/header.php';
                     <label for="post_title" class="form-label"> Judul Postingan </label>
                     <input type="text" class="form-control" name="post_title" required>
                 </div>
-                <!-- input untuk judul postingan -->
+                <!-- input untuk mengunggah gambar -->
                 <div class="mb-3">
                     <label for="formFile" class="form-label"> Unggah Gambar </label>
                     <input class="form-control" type="file" name="image" accept="image/*" />
@@ -51,3 +51,7 @@ include '.includes/header.php';
         </div>
     </div>
 </div>
+<?php 
+//menyertakan footer halaman
+include '.includes/footer.php';
+?>
