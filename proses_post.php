@@ -51,3 +51,29 @@ if (isset($_POST['simpan'])) {
     header('Location: dashboard.php');
     exit();
 }
+
+//proses penghapusan postingan
+if (isset($_POST['delete'])) {
+    //mengambil ID post dari parameter URL
+    $postID = $_POST['postID'];
+
+    //query untuk menghapus post berdasarkan ID
+    $exec = mysqli_query($conn, "DELETE FROM posts WHERE id_post='$postID'");
+
+    //menyimpan notifikasi keberhasilan atau kegagalan ke dalam session
+    if ($exec) {
+        $_SESSION['notification'] = [
+            'type' => 'primary',
+            'message' => 'post successfully deleted.'
+        ];
+    } else {
+        $_SESSION['notification'] = [
+            'type' => 'danger',
+            'message' => 'error deleting post: ' . mysqli_error($conn)
+        ];
+    }
+
+    //redirect kembali ke halaman dashboard
+    header('Location: dashboard.php');
+    exit();
+}
