@@ -41,7 +41,7 @@ include '.includes/header.php';
                 <!-- Textarea untuk konten postingan -->
                  <div class="mb-3">
                     <label for="content" class="form-label">Konten</label>
-                    <textarea class="form-control" name="content" id="content" required></textarea>
+                    <textarea class="form-control" id="content" name="content" required></textarea>
                  </div>
                 <!-- Tombol submit -->
                  <button type="submit" name="simpan" class="btn btn-primary">Simpan</button>

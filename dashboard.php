@@ -66,10 +66,10 @@ include '.includes/toast_notification.php';
                                           </div>
                                     </div>
                                 </td>
-                             </tr>
+                             </tr> 
 
                              <!-- modal untuk hapus konten blog --> 
-                             <div class="modal-fade" id="deletePost_<?= $post['id_post']; ?>" tabindex="-1" aria-hidden="true">
+                             <div class="modal fade" id="deletePost_<?= $post['id_post']; ?>" tabindex="-1" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
